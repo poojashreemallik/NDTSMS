@@ -83,6 +83,14 @@ public class StudentController {
 		return "redirect:index.jsp";
 	}
 	
+	@RequestMapping("/login")
+	public ModelAndView show() 
+	{
+		return new ModelAndView("login", "command", new Student());
+    }
+	
+	 
+	
 	@RequestMapping("/register")
 	public ModelAndView showform() 
 	{
